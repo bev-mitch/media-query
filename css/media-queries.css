@@ -12,14 +12,10 @@ body, html {
 
 @media screen and (min-width:500px) {
 main {
-
     height: 900px;
     width: 400px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: center;
+
 
 }
 }
@@ -29,38 +25,42 @@ main {
     background: white;
     width: 100%;
     height: auto;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% repeat(4, 1fr);
+    display: inline-block;
+    /*grid-template-columns: 1fr;*/
+    /*grid-template-rows: 10% repeat(4, 1fr);*/
     padding: 2em;
 }
 
 h1 {
-    color: lightgrey;
+    color: black;
 }
 header {
-    border: 2px solid black ;
-    height: 20%;
-    background: cyan;
+    background: rgba(204	255	255);
+    border: 2px solid lightgray;
+    margin:  10px;
+    padding: 10px;
     font-size: 14px;
     grid-area: 1/ 1/ 2/ 2;
 }
-.alert-info hidden-on-desktop {
-    padding: 2em;
+.alert-info hidden-on-desktop a {
+
 }
+
 nav {
     grid-area: 2 /1 / 3/ 2;
 }
-nav ul {
-    background: grey;
-    align-content: space-between;
 
+.nav-links {
+    padding: 0;
 }
-nav a {
-    padding: 2em;
 
-
+li {
+    list-style-type: none;
+    background: gray;
+    margin: 10px;
+    padding: 10px;
 }
+
 .header-img {   
     grid-area: 3 / 1/ 4/ 2;
 }
@@ -69,7 +69,12 @@ img {
     height: auto;
 }
 article {
+    display: flex;
     grid-area: 4/ 1 / 5/ 2;
+    
+}
+article p {
+    justify-content: spa;
 }
 footer {
     grid-area: 5/ 1 / 6/ 2;
