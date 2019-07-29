@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html {
+    background: black;
+    font-family: Arial;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+/* screen sizes 500px and up */
+@media screen and (min-width:500px) {
+    #wrapper-media {
+        background: white;
+        display: flex;
+        width: 400px;
+        height: 900px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.alert-info hidden-on-desktop {
+       grid-area:
+}
