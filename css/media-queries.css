@@ -15,7 +15,10 @@ main {
 
     height: 900px;
     margin: 0 auto;
-
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
 
 
 }
@@ -23,8 +26,8 @@ main {
 
 #wrapper-media {
     background: white;
-    width: auto;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
