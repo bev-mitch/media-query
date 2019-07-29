@@ -77,10 +77,57 @@ footer {
     grid-area: 5/ 1 / 6/ 2;
 }
 
+/*desktop view*/
 @media screen and (min-width:500px) {
     #wrapper-media {
         background: red;
         margin: 0 auto;
+        display: inline-block;
+
     }
 
+    article {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        grid-area: 4/ 1 / 5/ 2;
+
+    }
+
+
+
+    h1 {
+        color: black;
+    }
+    header {
+        /*background: rgba(204	255	255);*/
+        /*border: 2px solid lightgray;*/
+        /*margin:  10px;*/
+        /*padding: 10px;*/
+        /*font-size: 14px;*/
+        /*grid-area: 1/ 1/ 2/ 2;*/
+    }
+    header a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        list-style-type: none;
+        background: inherit;
+        margin: 5px;
+        padding: 5px;
+    }
 }
